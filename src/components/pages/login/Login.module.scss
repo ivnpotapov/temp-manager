@@ -1,0 +1,27 @@
+.login {
+    background-image: url('./../../assets/images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapper {
+    display: flex;
+    min-height: calc(100vh - 128px);
+    width: 550px;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 599px) {
+      min-height: calc(100vh - 120px);
+      width: 93vw;
+    }
+  }
+  .formButton {
+    width: 150px;
+    @media (max-width: 599px) {
+      height: 30px;
+      width: 130px;
+    }
+  }
+  

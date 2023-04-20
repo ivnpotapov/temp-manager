@@ -1,0 +1,97 @@
+.wrapper {
+  border: solid 2px;
+  border-radius: 3px;
+  height: fit-content;
+  background-color: #faea73;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 0.8rem;
+  min-width: 250px;
+  margin-bottom: 1rem;
+}
+.columnDraggingOver {
+  border: solid 2px;
+  border-radius: 3px;
+  height: fit-content;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 0.8rem;
+  min-width: 250px;
+  margin-bottom: 1rem;
+}
+.columnHeader {
+  padding: 8px;
+}
+.title {
+  text-align: center;
+  margin: 0;
+}
+.tasksWrapper {
+  // position: relative;
+  // max-height: 50vh;
+}
+.taskList {
+  flex-direction: column;
+  display: flex;
+  // position: absolute;
+  gap: 0.8rem;
+  min-height: 35px;
+  // max-height: 50vh;
+}
+.dragactive {
+  background-color: rgb(247, 206, 220);
+  padding: 8px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.nodragactive {
+  padding: 8px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: end;
+  gap: 0.8rem;
+}
+.columnHeaderContext {
+  display: flex;
+  justify-content: space-between;
+}
+.columnHeaderButton {
+  background: none;
+  border: none;
+  right: 5rem;
+  cursor: pointer;
+  &:hover {
+    color: red;
+  }
+}
+.line {
+  margin-bottom: -20px;
+  height: 2px;
+  background-color: black;
+  border: solid 0;
+  border-radius: 12px;
+}
+.newTask {
+  position: ab;
+  // left: 1.5rem;
+  // // top: 1.5rem;
+  height: fit-content;
+  width: fit-content;
+  border: solid 2px;
+  border-radius: 3px;
+  padding: 4px 10px;
+  height: fit-content;
+  background-color: #cceff6;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  &:hover {
+    background-color: #fff;
+    color: black;
+  }
+}

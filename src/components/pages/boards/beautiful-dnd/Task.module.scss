@@ -1,0 +1,69 @@
+.wrapper {
+  background-color: #cceff6;
+  border: solid 2px;
+  border-radius: 3px;
+  padding: 4px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.draggingOver {
+  background-color: #fff;
+  border: solid 2px;
+  border-radius: 3px;
+  padding: 4px 8px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.taskButton {
+  background: none;
+  border: none;
+  right: 5rem;
+  cursor: pointer;
+  &:hover {
+    color: red;
+  }
+}
+.button_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.content_wrapper {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  &:hover {
+    color: red;
+  }
+}
+.taskDescWrapper {
+  width: 50%;
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%),
+    0px 1px 3px 0px rgb(0 0 0 / 12%);
+  display: grid;
+  grid-row-gap: 20px;
+  justify-items: center;
+  position: absolute;
+  z-index: 5;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @media (max-width: 700px) {
+    width: 80%;
+  }
+}
+.taskDescContent {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  @media (max-width: 600px) {
+    justify-content: space-between;
+    width: 90%;
+  }
+}
